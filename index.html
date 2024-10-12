@@ -25,6 +25,7 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -80,25 +81,20 @@
   <section class="about_section layout_padding" id="about">
     <div class="about_container">
       <div class="container">
-        <div class="detail">
-          <h2 class="custom_heading">
-            About Us
+        <div class="detail" style="width:100%; display: flex;">
+          <div style="margin-left: -5%;">
+          <h2>
+            What is the relation of AI and water?
           </h2>
           <p>
-            It is a long established fact that a reader will be distracted by the readable content of a page when
-            looking at its layout. The point of g it
+            The rapid growth of artificial intelligence (AI) technologies has led to an increase in energy consumption and resource usage, particularly concerning water resources. The training of machine learning (ML) models, especially large-scale models, often requires significant computational power, which translates into a substantial demand for electricity. This, in turn, raises concerns about water scarcity due to the high water usage involved in cooling data centers, which house the GPUs (Graphics Processing Units) needed for AI training.<br><br>
+
+            Data centers typically use large amounts of water for cooling purposes, primarily through evaporative cooling systems that rely on water to regulate temperatures. As the demand for AI services surges, data centers must scale up operations, resulting in increased water consumption. This dual problem of excessive AI usage and the cooling needs of ML models can exacerbate existing water scarcity issues, particularly in regions already facing water stress.
           </p>
-          <div>
-            <a href="">
-              Read More
-            </a>
           </div>
+          <div style="flex: 0 0 auto; margin-left: 20px; display: flex; align-items: center;">
+            <img src="images/fan.jpg" alt="AI and Water" style="max-width: 300px;width:100%; height: auto;">
         </div>
-        <div class="detail-2">
-          <p>
-            It is a long established fact that a reader will be distracted by the readable content of a page when
-            looking at its layout. The point of g it
-          </p>
         </div>
       </div>
     </div>
@@ -108,30 +104,27 @@
   <!-- end about section -->
 
   <!-- product section -->
-  <section class="product_section layout_padding">
-    <div class="d-flex justify-content-center">
-      <h2 class="custom_heading">
-        Our Products
-      </h2>
-    </div>
-    <div class="container layout_padding2">
-      <div class="img-box box-1">
-        <img src="images/p-1.jpg" alt="">
+  <section class="about_section layout_padding">
+    <div class="about_container">
+      <div class="container">
+        <div class="detail" style="width:100%;">
+          <h2>
+            Why AI needs water?
+          </h2>
+          <h4>Increased Demand for AI Services:</h4>
+          <p>
+            The growing adoption of AI across various sectors drives the need for more powerful computing resources. As businesses increasingly rely on data-driven decision-making, the demand for training and deploying AI models escalates.
+          </p>
+          <h4>High Energy Consumption of Data Centers:</h4>
+          <p>
+            Training AI models requires significant computational power, leading to energy-intensive operations. This high energy demand can strain power generation, which, depending on the sources, may increase water usage in cooling processes.
+          </p>
+          <h4>Cooling Requirements for GPUs:</h4>
+          <p>
+            The training of large ML models often involves multiple GPUs running simultaneously, generating significant heat. To maintain optimal operating temperatures, data centers utilize extensive cooling systems reliant on water, raising overall consumption and placing stress on local supplies.
+          </p>
+        </div>
       </div>
-      <div class="img-box box-2">
-        <img src="images/p-2.jpg" alt="">
-      </div>
-      <div class="img-box box-3">
-        <img src="images/p-3.jpg" alt="">
-      </div>
-      <div class="img-box box-4">
-        <img src="images/p-4.jpg" alt="">
-      </div>
-    </div>
-    <div class="d-flex justify-content-center">
-      <a href="">
-        See More
-      </a>
     </div>
   </section>
 
@@ -140,76 +133,37 @@
 
   <!-- why section -->
 
-  <section class="why_section layout_padding">
-    <div class="container">
-      <div class="d-flex flex-column align-items-center text-center">
-        <h2 class="custom_heading ">
-          Why choose Us
-        </h2>
-        <p class="">
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking
-          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-          opposed to using 'Content here, content here', making it
-        </p>
+  <section class="about_section layout_padding">
+    <div class="about_container">
+      <div class="container">
+        <div class="detail" style="width:100%;">
+          <h2>
+            How can we help to fix it?
+          </h2>
+          <h4>Optimizing Data Center Operations:</h4>
+          <p>
+            Data centers can adopt efficient cooling technologies to minimize water use, such as closed-loop systems that recirculate water. Additionally, deploying AI to optimize cooling management can enhance efficiency.
+          </p>
+          <h4>Using Alternative Cooling Methods:</h4>
+          <p>
+            Transitioning to liquid or air cooling systems can reduce dependence on water while still providing adequate cooling for GPUs.
+          </p>
+          <h4>Leveraging Renewable Energy:</h4>
+          <p>
+            Shifting toward renewable energy sources for powering data centers can reduce the water footprint of electricity generation, minimizing the overall water usage associated with AI operations.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="why_container my-4">
-      <div class="img_box">
-        <img src="images/why-img.jpg" alt="">
-      </div>
-    </div>
-    <div class="d-flex justify-content-center">
-      <a href="">
-        Read More
-      </a>
     </div>
   </section>
 
   <!-- end why section -->
 
-
-
-  <!-- contact section -->
-
-  <section class="contact_section layout_padding">
-    <div class="container">
-      <div class="col-md-6">
-        <div class="d-flex mb-4 ml-4 ml-md-0">
-          <h2 class="custom_heading text-center">
-            CONTACT US
-          </h2>
-        </div>
-        <form action="">
-          <div>
-            <input type="text" placeholder="Name" />
-          </div>
-          <div>
-            <input type="email" placeholder="Email" />
-          </div>
-          <div>
-            <input type="text" placeholder="Pone Number" />
-          </div>
-          <div>
-            <input type="text" class="message-box" placeholder="Message" />
-          </div>
-          <div class="d-flex justify-content-center mt-4 ">
-            <button>
-              SEND
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- end contact section -->
-
   <!-- client section -->
   <section class="client_section layout_padding">
     <div class="d-flex justify-content-center">
       <h2 class="custom_heading">
-        Testimonial
+        Developers
       </h2>
     </div>
     <div class="container">
@@ -217,7 +171,6 @@
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -229,19 +182,10 @@
               <div class="detail_box">
                 <h5>
                   <span>
-                    M
-                  </span>
+                  Mohit Mhatre
+                  </span><br>
                   <span>
-                    o
-                  </span>
-                  <span>
-                    r
-                  </span>
-                  <span>
-                    s
-                  </span>
-                  <span>
-                    w
+                  1822
                   </span>
                 </h5>
                 <p>
@@ -262,53 +206,11 @@
               <div class="detail_box">
                 <h5>
                   <span>
-                    M
-                  </span>
-                  <span>
-                    o
-                  </span>
-                  <span>
-                    r
-                  </span>
-                  <span>
-                    s
-                  </span>
-                  <span>
-                    w
-                  </span>
-                </h5>
-                <p>
-                  It is a long established fact that a reader will be distracted by the readable content of a page when
-                  looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                  distribution of
-                  letters,
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="client_container layout_padding">
-              <div class="img_box">
-                <img src="images/client.png" alt="">
-              </div>
-
-              <div class="detail_box">
-                <h5>
-                  <span>
-                    M
-                  </span>
-                  <span>
-                    o
-                  </span>
-                  <span>
-                    r
-                  </span>
-                  <span>
-                    s
-                  </span>
-                  <span>
-                    w
-                  </span>
+                    Yash Mhatre
+                    </span><br>
+                    <span>
+                    1823
+                    </span>
                 </h5>
                 <p>
                   It is a long established fact that a reader will be distracted by the readable content of a page when
@@ -328,67 +230,7 @@
 
   <!-- end client section -->
 
-  <!-- info section -->
-  <section class="info_section layout_padding">
-    <div class="container layout_padding-top  layout_padding2-bottom">
-      <div class="logo-box">
-        <a href="index.html">
-          <img src="images/info-logo.png" alt="">
-        </a>
-      </div>
-      <div class="info_items">
-        <a href="">
-          <div class="item ">
-            <div class="img-box box-1">
-              <img src="images/location-white.png" alt="" />
-            </div>
-            <div class="detail-box">
-              <p>
-                It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="item ">
-            <div class="img-box box-3">
-              <img src="images/envelope-white.png" alt="" />
-            </div>
-            <div class="detail-box">
-              <p>
-                demo@gmail.com
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="item ">
-            <div class="img-box box-2">
-              <img src="images/telephone-white.png" alt="" />
-            </div>
-            <div class="detail-box">
-              <p>
-                +02 1234567890
-              </p>
-            </div>
-          </div>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
   <!-- end info_section -->
-
-  <!-- footer section -->
-  <section class="container-fluid footer_section">
-    <p>
-      &copy; 2019 All Rights Reserved By
-      <a href="https://html.design/">Free Html Templates</a>
-    </p>
-  </section>
-  <!-- footer section -->
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
