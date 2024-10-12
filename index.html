@@ -24,8 +24,12 @@
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" 
+  />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -67,7 +71,7 @@
     <!-- hero section -->
     <section class="hero_section">
       <div class="hero_detail">
-        <h1>
+        <h1 id="topic">
           The Impact of Excessive AI Usage on Water Resources and Water Scarcity
         </h1>
       </div>
@@ -81,14 +85,16 @@
   <section class="about_section layout_padding" id="about">
     <div class="about_container">
       <div class="container">
-        <div class="detail">
-          <div class="text_container">
-            <h2>What is the relation of AI and water?</h2>
-            <p>
-              The rapid growth of artificial intelligence (AI) technologies has led to an increase in energy consumption and resource usage, particularly concerning water resources. The training of machine learning (ML) models, especially large-scale models, often requires significant computational power, which translates into a substantial demand for electricity. This, in turn, raises concerns about water scarcity due to the high water usage involved in cooling data centers, which house the GPUs (Graphics Processing Units) needed for AI training.<br><br>
-  
-              Data centers typically use large amounts of water for cooling purposes, primarily through evaporative cooling systems that rely on water to regulate temperatures. As the demand for AI services surges, data centers must scale up operations, resulting in increased water consumption. This dual problem of excessive AI usage and the cooling needs of ML models can exacerbate existing water scarcity issues, particularly in regions already facing water stress.
-            </p>
+        <div class="detail" style="width:100%; display: flex;">
+          <div style="margin-left: -5%;">
+          <h2>
+            What is the relation of AI and water?
+          </h2>
+          <p class="roboto-regular">
+            The rapid growth of artificial intelligence (AI) technologies has led to an increase in energy consumption and resource usage, particularly concerning water resources. The training of machine learning (ML) models, especially large-scale models, often requires significant computational power, which translates into a substantial demand for electricity. This, in turn, raises concerns about water scarcity due to the high water usage involved in cooling data centers, which house the GPUs (Graphics Processing Units) needed for AI training.<br><br>
+
+            Data centers typically use large amounts of water for cooling purposes, primarily through evaporative cooling systems that rely on water to regulate temperatures. As the demand for AI services surges, data centers must scale up operations, resulting in increased water consumption. This dual problem of excessive AI usage and the cooling needs of ML models can exacerbate existing water scarcity issues, particularly in regions already facing water stress.
+          </p>
           </div>
         </div>
         <div class="div_image">
@@ -106,7 +112,23 @@
   <section class="about_section layout_padding">
     <div class="about_container">
       <div class="container">
-        
+        <div class="detail" style="width:100%;">
+          <h2>
+            Why AI needs water?
+          </h2>
+          <h4>Increased Demand for AI Services:</h4>
+          <p class="roboto-regular">
+            The growing adoption of AI across various sectors drives the need for more powerful computing resources. As businesses increasingly rely on data-driven decision-making, the demand for training and deploying AI models escalates.
+          </p>
+          <h4>High Energy Consumption of Data Centers:</h4>
+          <p class="roboto-regular ">
+            Training AI models requires significant computational power, leading to energy-intensive operations. This high energy demand can strain power generation, which, depending on the sources, may increase water usage in cooling processes.
+          </p>
+          <h4>Cooling Requirements for GPUs:</h4>
+          <p class="roboto-regular ">
+            The training of large ML models often involves multiple GPUs running simultaneously, generating significant heat. To maintain optimal operating temperatures, data centers utilize extensive cooling systems reliant on water, raising overall consumption and placing stress on local supplies.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -119,7 +141,23 @@
   <section class="about_section layout_padding">
     <div class="about_container">
       <div class="container">
-        
+        <div class="detail" style="width:100%;">
+          <h2>
+            How can we help to fix it?
+          </h2>
+          <h4>Optimizing Data Center Operations:</h4>
+          <p class="roboto-regular ">
+            Data centers can adopt efficient cooling technologies to minimize water use, such as closed-loop systems that recirculate water. Additionally, deploying AI to optimize cooling management can enhance efficiency.
+          </p>
+          <h4>Using Alternative Cooling Methods:</h4>
+          <p class="roboto-regular ">
+            Transitioning to liquid or air cooling systems can reduce dependence on water while still providing adequate cooling for GPUs.
+          </p>
+          <h4>Leveraging Renewable Energy:</h4>
+          <p class="roboto-regular ">
+            Shifting toward renewable energy sources for powering data centers can reduce the water footprint of electricity generation, minimizing the overall water usage associated with AI operations.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -155,7 +193,7 @@
                   1822
                   </span>
                 </h5>
-                <p>
+                <p class="roboto-regular ">
                   It is a long established fact that a reader will be distracted by the readable content of a page when
                   looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
                   distribution of
@@ -179,7 +217,7 @@
                     1823
                     </span>
                 </h5>
-                <p>
+                <p class="roboto-regular ">
                   It is a long established fact that a reader will be distracted by the readable content of a page when
                   looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
                   distribution of
