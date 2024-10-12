@@ -76,7 +76,7 @@ body {
 /*header section*/
 .hero_area {
   height: 98vh;
-  background-image: url(../images/nature.jpeg);
+  background-image: url(../images/AI.jpg);
   background-size: cover;
   background-attachment: fixed;
   z-index: 0;
@@ -623,7 +623,21 @@ a:focus {
 
 .footer_section a {
   color: #292929;
+
+
+
 }
 
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
+}
+
+#topic{
+  color: #F4F6FF;
+}
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
