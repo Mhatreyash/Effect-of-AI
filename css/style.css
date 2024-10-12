@@ -85,8 +85,10 @@ body {
 /* Media query for small devices */
 @media (max-width: 768px) {
   .hero_area {
-    background-size: contain; /* Ensure the whole image fits inside the area */
-    height: 44.4%; /* Adjust height so that image isn't cropped */
+    background-size: contain;
+    /* Ensure the whole image fits inside the area */
+    height: 44.4%;
+    /* Adjust height so that image isn't cropped */
   }
 }
 
@@ -129,7 +131,7 @@ a:focus {
 .btn:focus {
   outline: none !important;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .navbar-brand,
@@ -156,12 +158,12 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   align-items: center;
   margin-right: 0;
 }
@@ -182,11 +184,11 @@ a:focus {
   padding: 15px 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -207,11 +209,11 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 75%;
 }
 
@@ -231,18 +233,18 @@ a:focus {
 /* Media Query for smaller screens */
 @media (max-width: 1024px) {
   .hero_section h1 {
-    margin-top:5%;
+    margin-top: 5%;
     font-size: 45px !important;
-    margin-bottom:25.75%;
-     /* Reduce font size for tablets */
+    margin-bottom: 25.75%;
+    /* Reduce font size for tablets */
   }
 }
 
 @media (max-width: 768px) {
   .hero_section h1 {
     font-size: 5px !important;
-    margin-bottom:25.75%;
-     /* Reduce font size for tablets */
+    margin-bottom: 25.75%;
+    /* Reduce font size for tablets */
   }
 }
 
@@ -262,6 +264,7 @@ a:focus {
 
 .about_section {
   z-index: 5000;
+  padding: 20px 0;
 }
 
 .about_section .about_container {
@@ -282,22 +285,23 @@ a:focus {
 
 @media (max-width: 768px) {
   .about_section .about_container {
-    padding: 40px 25px;  /* Reduce padding */
+    padding: 40px 25px;
+    /* Reduce padding */
     margin-top: -70px;
   }
 }
 
 .about_section .about_container .container {
-  
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.about_section .about_container .container > div {
+.about_section .about_container .container>div {
   width: 46%;
 }
 
@@ -316,17 +320,54 @@ a:focus {
   color: #ffffff;
 }
 
+.detail {/* Use flexbox for layout */
+  flex-direction: row; /* Default layout: side by side */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between text and image */
+}
+
+.text_container {
+  flex: 1; /* Allow text to take available space */
+  margin-right: 20px; /* Space between text and image */
+}
+
+.div_image {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Prevent image from stretching */
+}
+
+.how_image {
+  max-width: 300px; /* Max width for image */
+  width: 100%; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Query for screens below 768px */
+@media (max-width: 768px) {
+  .detail {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .text_container {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 20px; /* Space below text */
+  }
+}
+
 .about_section .detail-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .product_section .container {
@@ -334,7 +375,7 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .product_section .img-box {
@@ -348,11 +389,13 @@ a:focus {
   width: 100%;
 }
 
-.product_section .img-box.box-1, .product_section .img-box.box-3 {
+.product_section .img-box.box-1,
+.product_section .img-box.box-3 {
   width: 43%;
 }
 
-.product_section .img-box.box-2, .product_section .img-box.box-4 {
+.product_section .img-box.box-2,
+.product_section .img-box.box-4 {
   width: 53%;
 }
 
@@ -460,8 +503,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .client_section .img_box {
@@ -469,16 +512,16 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   min-width: 225px;
   min-height: 225px;
   border-radius: 100%;
   background: -webkit-gradient(linear, left top, right top, from(#afad04), to(#5da802));
-  background: linear-gradient(to right, #afad04, #5da802);
+  background: linear-gradient(to bottom, #0ce0b2, #0266a8);
   margin-right: 15px;
 }
 
@@ -489,14 +532,14 @@ a:focus {
 .client_section .detail_box {
   padding: 25px;
   background: -webkit-gradient(linear, left top, left bottom, from(#afad04), to(#5da802));
-  background: linear-gradient(to bottom, #afad04, #5da802);
+  background: linear-gradient(to bottom, #0ce0b2, #0266a8);
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .client_section .detail_box h5 {
@@ -506,18 +549,18 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-right: 35px;
 }
 
 .client_section .carousel-indicators {
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   width: 90%;
   margin: 0 auto;
   bottom: 30px;
@@ -532,7 +575,7 @@ a:focus {
 }
 
 .client_section .carousel-indicators li.active {
-  background-color: #46a102;
+  background-color: #0266a8;
 }
 
 .info_section {
@@ -558,14 +601,14 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .info_items .item {
@@ -574,11 +617,11 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   margin-bottom: 25px;
 }
