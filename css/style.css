@@ -89,6 +89,7 @@ body {
     /* Ensure the whole image fits inside the area */
     height: 44.4%;
     /* Adjust height so that image isn't cropped */
+    background-repeat: no-repeat;
   }
 }
 
