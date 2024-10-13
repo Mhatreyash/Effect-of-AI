@@ -1,0 +1,233 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI and Water Usage: In-Depth Analysis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .chart-container {
+            position: relative;
+            height: 400px;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 40px;
+        }
+        .card {
+            width: 350px;
+            height: 200px;
+            perspective: 1024px;
+            margin-bottom: 20px;
+        }
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.999s;
+        }
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .card-front {
+            background-color: #2e4ef2;
+            color: #fff;
+            border: 3px solid #0f6eea;
+            border-radius: 10px;
+            font-size: 20px;
+            transform: rotateY(0deg);
+        }
+        .card-back {
+            background-color: #02fff7;
+            color: #fff;
+            border: 3px solid #5dd5e7;
+            border-radius: 10px;
+            font-size: 16px;
+            transform: rotateY(180deg);
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>AI and Water Usage: In-Depth Analysis</h1>
+
+    <div class="chart-container">
+        <canvas id="waterUsageChart"></canvas>
+    </div>
+
+    <h2>Key AI Water Usage Factors</h2>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <p>Data Center Cooling</p>
+                </div>
+                <div class="card-back">
+                    <p class="roboto-regular ">AI operations in data centers require extensive cooling, consuming large amounts of water to maintain optimal temperatures for hardware.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <p>Power Generation</p>
+                </div>
+                <div class="card-back">
+                    <p>The high energy demands of AI systems indirectly lead to water consumption through power generation processes, especially in thermal power plants.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <p>Model Training</p>
+                </div>
+                <div class="card-back">
+                    <p>Training large AI models requires significant computational resources, leading to increased water usage for cooling and power generation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Case Studies</h2>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <p>Google's DeepMind AI</p>
+                </div>
+                <div class="card-back">
+                    <p>Google's DeepMind AI is estimated to use X million gallons of water annually for cooling its data centers, showcasing the significant water footprint of advanced AI systems.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <p>Facebook's Data Centers</p>
+                </div>
+                <div class="card-back">
+                    <p>Facebook's data centers, powering AI-driven content recommendation systems, consumed approximately Y billion gallons of water in 2020, highlighting the scale of water usage in social media AI applications.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <p>OpenAI's GPT-3</p>
+                </div>
+                <div class="card-back">
+                    <p>The training process for OpenAI's GPT-3 language model is estimated to have indirectly consumed Z million gallons of water, based on the electricity usage and associated water consumption in power generation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Future Projections</h2>
+    <div class="chart-container">
+        <canvas id="futureProjectionsChart"></canvas>
+    </div>
+
+    <script>
+        // Water Usage Chart
+        const waterUsageCtx = document.getElementById('waterUsageChart').getContext('2d');
+        new Chart(waterUsageCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Traditional Computing', 'AI Model Training', 'AI Inference'],
+                datasets: [{
+                    label: 'Water Usage (Gallons per Hour)',
+                    data: [100, 250, 150],
+                    backgroundColor: [
+                        'rgba(106, 44, 112, 0.6)',
+                        'rgba(240, 138, 93, 0.6)',
+                        'rgba(52, 152, 219, 0.6)'
+                    ],
+                    borderColor: [
+                        'rgba(106, 44, 112, 1)',
+                        'rgba(240, 138, 93, 1)',
+                        'rgba(52, 152, 219, 1)'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false, // Make the chart flexible
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Water Usage (Gallons per Hour)'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Future Projections Chart
+        const futureProjectionsCtx = document.getElementById('futureProjectionsChart').getContext('2d');
+        new Chart(futureProjectionsCtx, {
+            type: 'line',
+            data: {
+                labels: ['2020', '2022', '2024', '2026', '2028', '2030'],
+                datasets: [{
+                    label: 'Projected Water Usage by Data Centers (Billion Gallons)',
+                    data: [100, 120, 150, 200, 280, 400],
+                    borderColor: 'rgba(240, 138, 93, 1)',
+                    backgroundColor: 'rgba(240, 138, 93, 0.2)',
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false, // Make the chart flexible
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Water Usage (Billion Gallons)'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
