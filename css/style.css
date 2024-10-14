@@ -104,6 +104,8 @@ body {
 .header_section .container-fluid {
   padding-right: 25px;
   padding-left: 25px;
+  display: flex;
+  justify-content: center;
 }
 
 .header_section .nav_container {
