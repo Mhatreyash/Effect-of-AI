@@ -229,6 +229,7 @@ a:focus {
   display: flex;
   width: 85%;
   margin: 0 auto;
+  z-index: 300;
 }
 
 /* Media Query for smaller screens */
