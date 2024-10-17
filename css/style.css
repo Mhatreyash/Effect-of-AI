@@ -35,6 +35,13 @@ body {
   background-color: #ffffff;
 }
 
+.dev_img {
+  width: 200px; /* Set the width */
+  height: 175px; /* Set the height equal to the width */
+  border-radius: 50%; /* Makes the image a perfect circle */
+  overflow: hidden; /* Ensures the image doesn't exceed the boundary */
+}
+
 .layout_padding {
   padding: 75px 0;
 }
